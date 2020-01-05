@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+{% load staticfiles %}
+<html>
+    <header>
+        <title>
+            Index.html
+        </title>
+        <link rel="stylesheet" href="{% static "css/styles.css" %}">
+    </header>
+    <body>
+    <h2>Template for Index.html</h2>
+        templateTagName: {{ ttn_textForBody }}<br><br>
+        <img src="{% static 'images/Python_logo.jpg' %}" alt="Python logo not found">
+    </body>
+</html>

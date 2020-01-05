@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+{% load staticfiles %}
+<html>
+    <head>
+        <title>Form file of appForms</title>
+        <link rel="stylesheet" href="{% static "css/styles.css" %}"/>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css"/>
+    </head>
+    <body>
+        <div class="container">
+            <h3>Please sign up here</h3>
+            <form class="" action="index.html" method="post">
+                {{ form.as_p }}
+                {% csrf_token %}
+                <input type="submit" class="btn btn-primary" value="Submit">
+            </form>
+        </div>
+    </body>
+</html>
+
+
